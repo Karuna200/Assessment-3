@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Your Bank Name</title>
+
+<style>
+  /* Add this to your existing CSS */
+
+.theme-toggle-checkbox {
+    display: inherit;
+  }
+  
+  .theme-toggle-label {
+    background-color: #3498db;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .theme-toggle-checkbox:checked + .theme-toggle-label {
+    background-color: #e74c3c;
+  }
+  
+  .theme-toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .theme-toggle-checkbox:checked + .theme-toggle-label::before {
+    transform: translateX(25px);
+  }
+  
+  /* Additional styles for the dark theme */
+  body.dark-theme {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  nav.dark-theme {
+    background-color: #111;
+  }
+  
+  .landing-page.dark-theme {
+    background-color: #333;
+  }
+  
+  .theme-toggle-label.dark-theme {
+    background-color: #2c3e50;
+  }
+  
+  .theme-toggle-checkbox.dark-theme:checked + .theme-toggle-label {
+    background-color: #f39c12;
+  }
+  
+  .theme-toggle-label.dark-theme::before {
+    background-color: #000;
+  }
+  
+  .theme-toggle-checkbox.dark-theme:checked + .theme-toggle-label::before {
+    transform: translateX(25px);
+  }
+  
+
+</style>
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <div class="logo">yourFirst Bank</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- <li> <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+          <label for="theme-toggle" class="theme-toggle-label"></label></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Landing Page Content -->
+  <div class="landing-page">
+    <div class="container">
+      <h1>Welcome to yourFirst Bank</h1>
+      <p>Secure and reliable banking services for you.</p>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <img style="opacity: 0.1;" src="bac.jpg" alt="Background Image" class="background-image">
+
+  <!-- Color Theme Toggle Button -->
+
+  
+  
+</body>
+</html>
